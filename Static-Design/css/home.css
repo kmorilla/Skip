@@ -15,6 +15,7 @@ p {
 #prices {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 #prices h4, #prices p{
@@ -23,6 +24,7 @@ p {
 
 #prices h5 {
     color: var(--accent-color);
+    font-weight: 600;
 }
 
 .gas-prices-container {
@@ -89,17 +91,111 @@ p {
 }
 
 .gas-icon {
+    display: flex;
     border: 1px solid #fff;
     border-radius: 1rem;
-    margin: auto;
-    padding: 2.5rem 1.5rem;
-    background: linear-gradient( transparent 80%, var(--accent-color) 20%);
+    margin-left: auto;
+    height: 100%;
+    padding: 0 .5rem;
+    background: linear-gradient( transparent 60%, var(--accent-color) 40%);
 }
 
 .gas-icon span {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    margin: auto;
 }
 
 
+/*-------------------------------
+             Appointments 
+---------------------------------*/
+
+#appointments {
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+#appointments::after {
+    content:'';
+    position: absolute;
+    height: 3rem;
+    width: 100%;
+    bottom: -3rem;
+    left: 0;
+    background-color: #fff;
+}
+
+.appointment-container {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    display: flex;
+}
+
+.appointment {
+    margin: auto;
+    display: flex;
+}
+
+.event-icon {
+    display: flex;
+}
+
+.event-icon span {
+    font-size: 2rem;
+    margin: auto .5rem auto 0;
+}
 
 
+/*-------------------------------
+             Navbar 
+---------------------------------*/
+
+#footer-navbar {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1.5rem 0 1rem 0;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#footer-navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+}
+
+#footer-navbar div {
+    padding: 1rem;
+}
+
+#footer-navbar p {
+    font-size: .8rem;
+}
+
+#footer-navbar img {
+    height: 24px;
+    width: 24px;
+    vertical-align: baseline;
+}
+
+#footer-navbar a.skip-button {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    background-image: url("../img/logo1.png");
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    top: -2rem;
+    left: 40vw;
+}

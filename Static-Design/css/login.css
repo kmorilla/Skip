@@ -92,7 +92,9 @@ h1 {
     display: flex;
 }
 
-.login-button button {
+.login-button a {
+    color: var(--text-color);
+    text-align: center;
     width: 85%;
     padding: .6rem 0;
     margin-left: auto;
@@ -105,6 +107,14 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
+}
+
+.login-button a:hover {
+    text-decoration: none;
+}
+
+.login-button a:focus {
+    outline: none;
 }
 
 .circle-border-container {
