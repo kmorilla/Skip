@@ -5,6 +5,5 @@ $(document).ready(function () {
     $(".slide-1").height(windowHeight);
     $(".home2").height(windowHeight);
     $(".home3").height(windowHeight);
-    $("#login-page").height(windowHeight);
 
 });

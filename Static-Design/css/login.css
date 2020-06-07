@@ -1,17 +1,10 @@
-:root {
-    --main-bg-color: #12151C;
-    --secondary-bg-color: #30384B;
-    --accent-color: #08C188;
-    --text-color: #292F36;
-}
-
-body {
-    color: #292F36;
-    font-family: 'Montserrat', sans-serif;
-}
-
 #login-page {
     background-color: var(--main-bg-color);
+}
+
+.skip-logo {
+    display: flex;
+    margin: 10vh auto 2.5rem auto;
 }
 
 img {
@@ -22,12 +15,13 @@ img {
 h1 {
     color: var(--accent-color);
     margin: auto 0 auto .5rem;
+    text-transform: uppercase;
 }
 
 .login-signup-container {
     background-color: #fff;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     height: 75%;
 }
 
@@ -56,6 +50,7 @@ h1 {
 .login-input-container label {
     margin: 0;
     margin-left: .5rem;
+    font-size: .9rem;
 }
 
 .login-input-container span {
@@ -73,8 +68,14 @@ h1 {
     font-size: .8rem;
 }
 
+.checkbox-container {
+    width: 50%;
+    display: flex;
+    margin: 5px auto;
+}
+
 .login-extras input {
-    margin: auto .5rem auto 0;
+    margin: auto 5px auto 0;
 }
 
 .login-extras p {
@@ -83,6 +84,7 @@ h1 {
 
 .login-extras a {
     color: 	#089ec1;
+    margin: 5px auto;
 }
 
 .login-button {
@@ -90,7 +92,7 @@ h1 {
     display: flex;
 }
 
-.login-container button {
+.login-button button {
     width: 85%;
     padding: .6rem 0;
     margin-left: auto;
@@ -103,6 +105,11 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
+}
+
+.circle-border-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .circle-border {
@@ -123,17 +130,16 @@ h1 {
     font-size: 8px;
 }
 
-/* .sign-up {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-} */
-
 .sign-up h5 {
     font-weight: 600;
 }
 
 .sign-up-zip {
     width: 35%;
+}
+
+.sign-up label {
+    font-size: .9rem;
 }
 
 .sign-up input {
