@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/appointment.css">
+
+    <!-- Material Icons  -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <section id="prices">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="mx-auto w-75">
+                        <h4>Today's Prices</h4>
+                        <div class="gas-prices-container">
+                            <div class="gas-prices">
+                                <p>Regular</p>
+                                <h5>$2.80</h5>
+                            </div>
+                            <div class="gas-prices">
+                                <p>Premium</p>
+                                <h5>$3.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="calendar-container">
+                        <div id="datepicker"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="time">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="time-select">
+                        <h4>Select Time</h4>
+                        <div class="time-slot">8:00 AM</div>
+                        <div class="time-slot">8:15 AM</div>
+                        <div class="time-slot">8:30 AM</div>
+                        <div class="time-slot">8:45 AM</div>
+                        <div class="time-slot">9:00 AM</div>
+                        <div class="time-slot">9:15 AM</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="reserve"><a href="#"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="footer-navbar" class="navbar fixed-bottom">
+        <a href="#">
+            <span class="material-icons">
+                local_gas_station
+            </span>
+            <p>Home</p>
+        </a>
+        <a href="#">
+            <span class="material-icons">
+                account_circle
+            </span>
+            <p>Account</p>
+        </a>
+        <div></div>
+        <a href="#">
+            <span class="material-icons">
+                help
+            </span>
+            <p>FAQ</p>
+        </a>
+        <a href="#">
+            <img src="./img/logo2.png" alt="">
+            <p>Company</p>
+        </a>
+        <a href="#" class="skip-button"></a>
+    </nav>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/datepicker.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+/*-------------------------------
+             Prices 
+---------------------------------*/
+
+#calendar {
+    border-radius: 2rem 2rem 2rem 0;
+    background-color: #fff;
+    padding: 1.5rem 0;
+}
+
+#datepicker {
+    display: flex;
+}
+
+#datepicker .ui-datepicker-inline {
+    margin: auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.ui-datepicker-header {
+    margin-bottom: .8rem;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker-prev {
+    float: left;
+}
+
+.ui-datepicker-title {
+    font-weight: 600;
+    text-align: center;
+}
+
+.ui-datepicker-inline table {
+    width: 100%;
+}
+
+.ui-datepicker-calendar th{
+    width: 15%;
+}
+
+.ui-datepicker-calendar th:last-child {
+    padding-right: 0;
+}
+
+#datepicker a {
+    color: var(--text-color);
+}

@@ -11,6 +11,92 @@ body {
     background-color: var(--main-bg-color);
 }
 
+h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/*-------------------------------
+             Prices 
+---------------------------------*/
+
+#prices {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#prices h4, #prices p{
+    color: #fff;
+}
+
+#prices h5 {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.gas-prices-container {
+    display: flex;
+}
+
+.gas-prices {
+    margin: auto;
+}
+
+
+/*-------------------------------
+             Navbar 
+---------------------------------*/
+
+#footer-navbar {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1.5rem 0 1rem 0;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#footer-navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+}
+
+#footer-navbar div {
+    padding: 1rem;
+}
+
+#footer-navbar p {
+    font-size: .8rem;
+}
+
+#footer-navbar img {
+    height: 24px;
+    width: 24px;
+    vertical-align: baseline;
+}
+
+#footer-navbar a.skip-button {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    background-image: url("../img/logo1.png");
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    top: -2rem;
+    left: 40vw;
+}
+
 
 /* @media (max-width: 1199.98px) {
     html {
