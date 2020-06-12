@@ -87,36 +87,6 @@ h1 {
     margin: 5px auto;
 }
 
-.login-button {
-    width: 100%;
-    display: flex;
-}
-
-.login-button a {
-    color: var(--text-color);
-    text-align: center;
-    width: 85%;
-    padding: .6rem 0;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-bottom: 1.5rem; */
-    border-radius: 2rem;
-    border: 2px solid #000;
-    box-shadow: 0 0 0 3px var(--accent-color);
-    background-color: var(--accent-color);
-    text-transform: uppercase;
-    font-weight: 600;
-    position: relative;
-}
-
-.login-button a:hover {
-    text-decoration: none;
-}
-
-.login-button a:focus {
-    outline: none;
-}
-
 .circle-border-container {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;

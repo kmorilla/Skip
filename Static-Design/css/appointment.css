@@ -1,52 +1,104 @@
 /*-------------------------------
-             Prices 
+             Calendar 
 ---------------------------------*/
 
 #calendar {
     border-radius: 2rem 2rem 2rem 0;
     background-color: #fff;
     padding: 1.5rem 0;
+    position: relative;
+    width: 96%;
 }
 
-#datepicker {
-    display: flex;
+#calendar::after {
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    bottom: -2rem;
+    left: 0;
+    background-color: #fff;
+    z-index: -11;
 }
 
-#datepicker .ui-datepicker-inline {
-    margin: auto;
+#calendar #datepicker, .ui-datepicker-inline {
     width: 100%;
-    padding: 0 10px;
+    border: none;
 }
 
-.ui-datepicker-header {
-    margin-bottom: .8rem;
-}
-
-.ui-datepicker-next {
-    float: right;
-}
-
-.ui-datepicker-prev {
-    float: left;
-}
-
-.ui-datepicker-title {
-    font-weight: 600;
-    text-align: center;
-}
-
-.ui-datepicker-inline table {
-    width: 100%;
+.ui-datepicker-inline .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 .ui-datepicker-calendar th{
-    width: 15%;
+    width: 14%;
+    font-size: 1rem;
 }
 
-.ui-datepicker-calendar th:last-child {
-    padding-right: 0;
-}
-
-#datepicker a {
+.ui-datepicker-calendar td a {
+    padding: .2rem .2rem;
+    text-align: center;
+    border: none;
     color: var(--text-color);
+    clip-path: circle(30% at 50% 50%);
+    font-size: 1rem;
 }
+
+.ui-datepicker-inline .ui-state-highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.ui-datepicker-inline .ui-state-active {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/*-------------------------------
+             Time 
+---------------------------------*/
+
+#time {
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 150px;
+    border-top-left-radius: 2rem;
+    position: relative;
+}
+
+#time::before {
+    content: '';
+    position: absolute;
+    height: 8rem;
+    width: 2rem;
+    background-color: var(--secondary-bg-color);
+    top: -8rem;
+    right: 0;
+    z-index: -10;
+    border-top-right-radius: 2rem;
+}
+
+#time h4 {
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.time-slot-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-slot {
+    background-color: #fff;
+    border-radius: .7rem;
+    width: 30%;
+    margin: .5rem auto;
+    text-align: center;
+    padding: .2rem 0;
+}
+

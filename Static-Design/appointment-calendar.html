@@ -12,6 +12,8 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/base/jquery-ui.css">
+
     <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/appointment.css">
 
@@ -66,23 +68,31 @@
                 <div class="col-12">
                     <div class="time-select">
                         <h4>Select Time</h4>
-                        <div class="time-slot">8:00 AM</div>
-                        <div class="time-slot">8:15 AM</div>
-                        <div class="time-slot">8:30 AM</div>
-                        <div class="time-slot">8:45 AM</div>
-                        <div class="time-slot">9:00 AM</div>
-                        <div class="time-slot">9:15 AM</div>
+                        <div class="time-slot-container">
+                            <div class="time-slot">8:00 AM</div>
+                            <div class="time-slot">8:15 AM</div>
+                            <div class="time-slot">8:30 AM</div>
+                            <div class="time-slot">8:45 AM</div>
+                            <div class="time-slot">9:00 AM</div>
+                            <div class="time-slot">9:15 AM</div>
+                            <div class="time-slot">9:30 AM</div>
+                            <div class="time-slot">9:45 AM</div>
+                            <div class="time-slot">10:00 AM</div>
+                            <div class="time-slot">10:15 AM</div>
+                            <div class="time-slot">10:30 AM</div>
+                            <div class="time-slot">10:45 AM</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="reserve"><a href="#"></a></div>
+                <div class="col-12 mt-4">
+                    <div class="big-button"><a href="#">Reserve Time</a></div>
                 </div>
             </div>
         </div>
     </section>
 
     <nav id="footer-navbar" class="navbar fixed-bottom">
-        <a href="#">
+        <a href="./home.html">
             <span class="material-icons">
                 local_gas_station
             </span>
@@ -119,6 +129,8 @@
     <script src="./js/bootstrap.min.js"></script>
 
     <script src="./js/datepicker.js"></script>
+
+    <script src="./js/time-slot.js"></script>
 
 </body>
 
