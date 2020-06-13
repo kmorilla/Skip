@@ -12,17 +12,13 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/base/jquery-ui.css">
-
-    <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/appointment.css">
-
     <!-- Material Icons  -->
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/appointment-submit.css">
 
 </head>
 
@@ -50,46 +46,72 @@
         </div>
     </section>
 
-    <section id="calendar">
+    <section id="countdown">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="calendar-container">
-                        <div id="datepicker"></div>
+                    <div>
+                        <p>Time left to complete transaction: <span>4:10</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="time">
+    <section id="selection">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="time-select">
-                        <h4>Select Time</h4>
-                        <div class="time-slot-container">
-                            <div class="time-slot">8:00 AM</div>
-                            <div class="time-slot">8:15 AM</div>
-                            <div class="time-slot">8:30 AM</div>
-                            <div class="time-slot">8:45 AM</div>
-                            <div class="time-slot">9:00 AM</div>
-                            <div class="time-slot">9:15 AM</div>
-                            <div class="time-slot">9:30 AM</div>
-                            <div class="time-slot">9:45 AM</div>
-                            <div class="time-slot">10:00 AM</div>
-                            <div class="time-slot">10:15 AM</div>
-                            <div class="time-slot">10:30 AM</div>
-                            <div class="time-slot">10:45 AM</div>
+                    <h5>Select Vehicle</h5>
+                    <div class="vehicle-container">
+                        <div class="vehicle">
+                            <p>2016 Honda</p>
+                            <p>Plate: ABC123</p>
+                        </div>
+                        <div class="vehicle">
+                            <p class="make">2020 Nissan</p>
+                            <p class="plate">Plate: DEF456</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 mt-4">
-                    <div class="big-button"><a href="#">Reserve Time</a></div>
+                <div class="col-12">
+                    <h5>Select Address</h5>
+                    <div class="address-container">
+                        <div class="address">
+                            <p>123 Sesame St</p>
+                            <p>Sacramento, CA 95683</p>
+                        </div>
+                        <div class="address">
+                            <p>4567 My House Ln</p>
+                            <p>Sacramento, CA 95683</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="d-flex">
+                <button class="mt-4" type="button" data-toggle="modal" data-target="#exampleModalCenter">Book
+                    Now</button>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5>Thank you!</h5>
+                    <p class="pb-2">We will see you ... at 2:30 PM.</p>
+                    <p>What to do next? Please read our FAQ.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="small" data-dismiss="modal">FAQ</button>
+                    <a href="./home.html" class="home-button ml-auto">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav id="footer-navbar" class="navbar fixed-bottom">
         <a href="./home.html">
@@ -111,26 +133,22 @@
             </span>
             <p>FAQ</p>
         </a>
-        <a href="#">
+        <a href="./company.html">
             <img src="./img/logo2.png" alt="">
             <p>Company</p>
         </a>
-        <a href="#" class="skip-button"></a>
+        <a href="./appointment-reserve.html" class="skip-button"></a>
     </nav>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
 
-    <script src="./js/datepicker.js"></script>
-
-    <script src="./js/time-slot.js"></script>
+    <script src="./js/selector.js"></script>
 
 </body>
 

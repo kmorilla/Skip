@@ -12,13 +12,17 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/base/jquery-ui.css">
+
     <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/appointment.css">
 
     <!-- Material Icons  -->
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
 
 </head>
 
@@ -46,65 +50,45 @@
         </div>
     </section>
 
-    <section id="promotions">
+    <section id="calendar">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="promotions-container">
-                        <h4>Current Promotions</h4>
-                        <div class="promotion-info">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
-                        </div>
+                    <div class="calendar-container">
+                        <div id="datepicker"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="fill-ups">
+    <section id="time">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="row pt-4 pb-4">
-                        <div class="col-5 d-flex">
-                            <div class="gas-icon">
-                                <span class="material-icons">
-                                    local_gas_station
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-7 p-3 d-flex">
-                            <p class="my-auto">3 more fill ups to go to get $0.25 off each gallon on your next purchase
-                            </p>
+                    <div class="time-select">
+                        <h5>Select Time</h5>
+                        <div class="time-slot-container">
+                            <div class="time-slot">8:00 AM</div>
+                            <div class="time-slot">8:15 AM</div>
+                            <div class="time-slot">8:30 AM</div>
+                            <div class="time-slot">8:45 AM</div>
+                            <div class="time-slot">9:00 AM</div>
+                            <div class="time-slot">9:15 AM</div>
+                            <div class="time-slot">9:30 AM</div>
+                            <div class="time-slot">9:45 AM</div>
+                            <div class="time-slot">10:00 AM</div>
+                            <div class="time-slot">10:15 AM</div>
+                            <div class="time-slot">10:30 AM</div>
+                            <div class="time-slot">10:45 AM</div>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="big-button"><a href="./appointment-submit.html">Reserve Time</a></div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="appointments">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 padding-mobile">
-                    <h4>Upcoming Fill Ups</h4>
-                    <div class="appointment-container">
-                        <div class="appointment">
-                            <div class="event-icon">
-                                <span class="material-icons">
-                                    event
-                                </span>
-                            </div>
-                            <div>
-                                <p>January 9th 2020 2:30PM
-                                </p>
-                                <p>2016 Honda | Plate # ABC123</p>
-                                </di>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <nav id="footer-navbar" class="navbar fixed-bottom">
@@ -134,15 +118,19 @@
         <a href="./appointment-reserve.html" class="skip-button"></a>
     </nav>
 
-
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/datepicker.js"></script>
+
+    <script src="./js/slector.js"></script>
 
 </body>
 

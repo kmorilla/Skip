@@ -1,0 +1,104 @@
+body {
+    background-color: #fff;
+}
+
+/*-------------------------------
+            Countdown 
+---------------------------------*/
+
+#countdown {
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 2rem 2rem 2rem 0;
+    position: relative;
+}
+
+#countdown::after {
+        content: '';
+        position: absolute;
+        height: 2rem;
+        width: 100%;
+        bottom: -2rem;
+        left: 0;
+        background-color: var(--secondary-bg-color);
+        z-index: -10;
+}
+
+#countdown span {
+    font-weight: 600;
+}
+
+
+/*-------------------------------
+            Selection 
+---------------------------------*/
+
+#selection {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem;
+    padding-bottom: 150px;
+    border-top-left-radius: 2rem;
+}
+
+.vehicle-container {
+    margin-bottom: 2rem;
+}
+
+.vehicle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vehicle, .address {
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    font-size: .9rem;
+}
+
+.vehicle p:last-child {
+    margin-left: auto;
+}
+
+
+#selection button {
+    color: var(--text-color);
+    text-align: center;
+    width: 85%;
+    padding: .6rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 1.5rem; */
+    border-radius: 2rem;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 3px var(--accent-color);
+    background-color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#selection button {
+    text-decoration: none;
+}
+
+#selection button {
+    outline: none;
+}
+
+.modal-footer {
+    border: none !important;
+}
+
+.home-button, .modal button {
+    margin-top: auto;
+    padding: 5px 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color)
+}
