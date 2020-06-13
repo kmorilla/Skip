@@ -8,10 +8,9 @@
 body {
     color: #292F36;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--main-bg-color);
 }
 
-h5 {
+h4, h5 {
     font-weight: 600;
 }
 
@@ -119,6 +118,10 @@ span {
     text-align: center;
     margin: auto;
     width: 20%;
+}
+
+#footer-navbar span {
+    color: #fff;
 }
 
 #footer-navbar div {

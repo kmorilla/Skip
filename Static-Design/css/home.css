@@ -1,4 +1,9 @@
 
+h5 {
+    text-align: center;
+}
+
+
 /*-------------------------------
              Promotions 
 ---------------------------------*/
@@ -66,6 +71,7 @@
 .gas-icon span {
     font-size: 4.5rem;
     margin: auto;
+    color: #fff;
 }
 
 
@@ -111,4 +117,5 @@
 .event-icon span {
     font-size: 2rem;
     margin: auto .5rem auto 0;
+    color: #fff;
 }
