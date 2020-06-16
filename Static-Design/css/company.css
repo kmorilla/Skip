@@ -1,0 +1,167 @@
+h5 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/*-------------------------------
+             Header 
+---------------------------------*/
+
+#header {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/*-------------------------------
+             About 
+---------------------------------*/
+
+#about {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+#about::before {
+    content: '';
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    z-index: -10;
+}
+
+#about::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    border-radius: 2rem;
+    z-index: -1;
+}
+
+.about-background {
+    background-color: var(--secondary-bg-color);
+    position: absolute;
+    height: 100%;
+    width: 95%;
+    left: 0;
+    top: 0;
+    margin-left: 5%;
+    border-radius: 2rem 2rem 0 2rem;
+}
+
+.social-media {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-media img {
+    width: auto;
+    height: 1rem;
+    margin: auto 1rem;
+    margin-right: auto;
+}
+
+.social-media i {
+    font-size: 2rem;
+    margin-left: auto;
+}
+
+#about .person img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    margin: 2rem auto 1rem auto;
+}
+
+.title {
+    font-weight: 600;
+}
+
+#about .person p:last-of-type {
+    font-size: .8rem;
+}
+
+
+/*-------------------------------
+             News 
+---------------------------------*/
+
+#news {
+    padding: 2rem 1.5rem;
+    border-top-right-radius: 2rem;
+    position: relative;
+    background-color: #fff;
+}
+
+#news::before {
+    content: '';
+    background-color: var(--secondary-bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.article p:last-of-type{
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+
+.small-button {
+    margin-top: .5rem;
+    padding: 5px 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+    font-weight: 600;
+    font-size: .8rem;
+    color: var(--text-color);
+}
+
+.accordion {
+    border: none;
+    background-color: transparent;
+}
+
+.accordion button {
+    font-size: .9rem;
+    border: none;
+    padding: 0;
+    color: var(--text-color);
+    font-weight: 600;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.accordion button:focus {
+    outline: none;
+}
+
+
+/*-------------------------------
+             Press 
+---------------------------------*/
+
+#press {
+    margin-bottom: 8rem;
+    padding: 1.5rem;
+
+}
