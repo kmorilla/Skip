@@ -2,10 +2,6 @@ body {
     background-color: var(--main-bg-color);
 }
 
-#login-page {
-    background-color: var(--main-bg-color);
-}
-
 .skip-logo {
     display: flex;
     margin: 10vh auto 2.5rem auto;

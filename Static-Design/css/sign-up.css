@@ -1,0 +1,89 @@
+::placeholder {
+    color: var(--text-color)
+}
+
+:focus {
+    outline: none;
+}
+
+form input, form select {
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    height: 42px;
+    width: 100%;
+}
+
+/*-------------------------------
+             Logo 
+---------------------------------*/
+#logo {
+    background-color: var(--main-bg-color);
+}
+
+.skip-logo {
+    display: flex;
+    margin: 10vh auto 2.5rem auto;
+}
+
+img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+h1 {
+    color: var(--accent-color);
+    margin: auto 0 auto .5rem;
+    text-transform: uppercase;
+}
+
+
+/*-------------------------------
+             Sign Up  
+---------------------------------*/
+
+#sign-up {
+    background-color: var(--main-bg-color);
+    padding: 2rem 3rem;
+    border-bottom-right-radius: 2rem;
+}
+
+#sign-up h5 {
+    color: #fff;   
+    padding-bottom: .5rem;
+}
+
+#sign-up form input {
+    border: none;
+}
+
+
+/*-------------------------------
+             Vehicle
+---------------------------------*/
+
+.vehicle {
+    padding: 2rem 3rem;
+}
+
+.vehicle form input, .vehicle form select {
+    border: 1px solid var(--text-color)
+}
+
+select {
+    background-color: #fff;
+}
+
+.vehicle-button {
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    color: #fff;
+    border: none;
+    padding: 1rem 0;
+}
+
+.vehicle-button h6 {
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}

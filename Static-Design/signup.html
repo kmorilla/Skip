@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/sign-up.css">
+
+    <!-- Material Icons  -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1aee8376ce.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="sign-up-page">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 d-flex" id="logo">
+                    <div class="skip-logo">
+                        <img src="./img/logo.png" alt="">
+                        <h1>Skip</h1>
+                    </div>
+                </div>
+                <div class="col-12" id="sign-up">
+                    <h5>Sign Up</h5>
+                    <form action="">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <input type="text" name="address" id="address" placeholder="Address">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="col-12 vehicle">
+                    <h5>Add Vehicle 1</h5>
+                    <form action="">
+                        <input type="text" name="year1" id="year" placeholder="Year" maxlength="4">
+                        <select name="make1" id="make">
+                            <option value="">Make</option>
+                            <option value="honda">Honda</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="bmw">BMW</option>
+                        </select>
+                        <select name="model1" id="model">
+                            <option value="">Model</option>
+                        </select>
+                        <select name="color1" id="color">
+                            <option value="">Color</option>
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                        </select>
+                        <input type="text" name="plate1" id="plate" placeholder="License Plate #">
+                        <input type="text" name="nickname1" id="nickname" placeholder="Nickname (Optional)">
+                    </form>
+                </div>
+                <div class="col-12 padding-mobile">
+                    <div class="accordion" id="vehicle-accordion">
+                        <button class="vehicle-button" type="button" data-toggle="collapse"
+                            data-target="#vehicle-collapse" aria-expanded="true" aria-controls="vehicle-collapse">
+                            <h6>Add Vehicle 2 (optional)</h6>
+                        </button>
+                        <div id="vehicle-collapse" class="collapse vehicle" data-parent="#vehicle-accordion">
+                            <h5>Add Vehicle 2</h5>
+                            <form action="">
+                                <input type="text" name="year2" id="year" placeholder="Year" maxlength="4">
+                                <select name="make2" id="make">
+                                    <option value="">Make</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="nissan">Nissan</option>
+                                    <option value="bmw">BMW</option>
+                                </select>
+                                <select name="model2" id="model">
+                                    <option value="">Model</option>
+                                </select>
+                                <select name="color2" id="color">
+                                    <option value="">Color</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="red">Red</option>
+                                </select>
+                                <input type="text" name="plate2" id="plate" placeholder="License Plate #">
+                                <input type="text" name="nickname2" id="nickname" placeholder="Nickname (Optional)">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="payment-method">
+                <h5>Select Payment Method</h5>
+                <div class="payments">
+                    <div class="payment"></div>
+                    <div class="payment"></div>
+                    <div class="payment"></div>
+                    <div class="payment"></div>
+                </div>
+            </div>
+            <div class="col-12"><button class="big-button">Sign Up</button></div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
