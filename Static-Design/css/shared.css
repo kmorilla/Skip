@@ -5,6 +5,14 @@
     --text-color: #292F36;
 }
 
+::placeholder {
+    color: var(--text-color)
+}
+
+:focus {
+    outline: none !important;
+}
+
 body {
     color: #292F36;
     font-family: 'Montserrat', sans-serif;
