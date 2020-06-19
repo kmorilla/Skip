@@ -34,9 +34,12 @@ h1 {
 /*-------------------------------
              Sign Up  
 ---------------------------------*/
+#sign-up {
+    background-color: var(--main-bg-color);
+}
+
 
 #sign-up .col-12 {
-    background-color: var(--main-bg-color);
     padding: 2rem 3rem;
     border-bottom-right-radius: 2rem;
 }
@@ -159,4 +162,42 @@ select {
 #payment-method img {
     height: 2.5rem;
     margin: auto;
+}
+
+
+/*-------------------------------
+            Button
+---------------------------------*/
+
+.button {
+    background-color: var(--main-bg-color);
+    padding: 2rem 3rem;
+    display: flex;
+    position: relative;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--main-bg-color);
+    top: -3rem;
+    left: 0;
+    z-index: -10;
+}
+
+.button button {
+    width: 75%;
+    padding: .6rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 3px var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }

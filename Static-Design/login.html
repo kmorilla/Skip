@@ -132,7 +132,7 @@
                                     <label for="zip">Zip code</label>
                                     <input type="text" name="zip" id="zip">
                                 </div>
-                                <button type="submit">Sign up!</button>
+                                <button type="button" class="signup-button">Sign up!</button>
                             </form>
                         </div>
                     </div>
@@ -140,6 +140,34 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="exampleModalCenterTitle">Sorry!</h5>
+                    <a href="login.html" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p>We are not servicing your area yet. Please enter your email and we will notify you when we are.
+                    </p>
+
+                    <p>Thank you!</p>
+                    <label for="">Email</label>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div class="modal-footer">
+                    <a href="./login.html" class="small-button">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -149,6 +177,8 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/login.js"></script>
 
 </body>
 
