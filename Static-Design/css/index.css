@@ -1,62 +1,40 @@
-:root {
-    --main-bg-color: #12151C;
-    --secondary-bg-color: #30384B;
-    --accent-color: #08C188;
-    --text-color: #292F36;
-}
 
-body {
-    color: #292F36;
-    font-family: 'Montserrat', sans-serif;
-}
 
-#home, .home1, .home2, .home3 {
+.container, .row {
     height: 100%;
-    width: 100%;
 }
 
-.home1 {
-    background-color: var(--main-bg-color);
-}
-
-#home .owl-nav {
-    display: none;
-    visibility: hidden;
-}
-
-#home .owl-dots {
-    position: absolute;
-    bottom: 12vh;
-    left: calc(50% - ((42px + 3.3rem)/2));
-}
-
-#home .owl-dot span {
-    background-color: var(--accent-color);
-    opacity: 50%;
-    height: 1rem;
-    width: 1rem;
-}
-
-#home .owl-dot.active span {
-    opacity: 100% !important;
+.slide-footer {
+    display: flex;
+    position: relative;
+    height: 100%;
 }
 
 .swipe-right {
     display: flex;
-    right: 7vh;
+    color: #fff;
     margin-left: auto;
+    padding-right: 2rem;
     height: fit-content;
 }
 
 .swipe-right p {
-    margin-bottom: 0;
-    margin-right: .5rem;
+    font-size: 1.2rem;
+    margin: auto;
+    padding-right: .5rem;
 }
 
 .swipe-right i {
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.skip-button-container {
+    height: calc(100% - 1rem);
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    display: flex;
 }
 
 .skip-button {
@@ -64,129 +42,96 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
-    height: 25vw;
-    width: 25vw;
+    height: 12vh;
+    width: 12vh;
     background-color: var(--accent-color);
     border-radius: 50%;
-    position: absolute;
-    bottom: 4vh;
-    right: 4vh;
     z-index: 100;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.home-bottom {
-    display: flex;
-    padding-bottom: 7vh;
-}
+/*-------------------------------
+             Slide 1 
+---------------------------------*/
 
-
-/* slide-1 */
-
-.slide-1 {
-    color: #fff;
+#slide-1 {
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
-.slide-1::before {
-    content: '';
-    position: absolute;
-    background-color: var(--main-bg-color);
-    width: 90%;
+#slide-1 .text h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#slide-1 .text h1 {
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+.slide-1-background {
     height: 100%;
-    border-radius: 0 25% 25% 0;
-}
-
-.slide-1-text {
-    height: 80%;
-}
-
-.slide-1-img-col {
-    height: 80%;
-    padding-right: 0;
-}
-
-/* home2 */
-
-.home2 {
-    background-color: #fff;
-}
-
-.home-img-before {
-    position: relative;
-}
-
-.home-img-before::before {
-    content: '';
-    height: 6rem;
-    width: 3rem;
-    background-color: var(--main-bg-color);
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    border-bottom-right-radius: 3rem;
-    box-shadow: 0rem 3rem #fff;
+    background-color: var(--main-bg-color);
+    width: calc(100% - 1.5rem);
+    border-radius: 0 9rem 9rem 0;
+}
+
+#slide-1 .text {
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+/*-------------------------------
+             Slide 2 
+---------------------------------*/
+
+#slide-2 {
+    height: 100vh;
+    width: 100%;
 }
 
 .home-img-container {
-    background-color: var(--main-bg-color);
-    height: 30vh;
-    width: 100%;
+    height: 40%;
+    background: linear-gradient(var(--main-bg-color) 50%, #fff 50%);
     display: flex;
 }
 
 .home-img {
-    height: 65%;
-    margin: auto 0;
+    height: 75%;
+    margin: auto;
 }
 
-.home-img img {
+.home-img-container img {
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.about-container {
-    position: relative;
-}
-
-.about-container::before {
-    content: '';
-    height: 6rem;
-    width: 3rem;
-    background-color: #fff;
-    position: absolute;
-    top: 0rem;
-    left: 0;
-    border-top-left-radius: 3rem;
-    box-shadow: 0rem -3rem var(--main-bg-color);
+    box-shadow: 1px 2px 6px var(--main-bg-color);
 }
 
 .about {
-    padding: 3rem 2rem;
+    padding: 2rem
+}
+
+.about h3 {
+    font-weight: 600;
 }
 
 .about h5 {
-    margin-top: 1rem;
+    text-transform: none;
 }
 
-.skip-logo {
-    background-image: url("../img/logo-home2.png");
-    background-position: left top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 13rem;
-}
-
-.home2 .owl-stage-outer, .home2 .owl-stage, .home2 .owl-item {
-    height: 100%;
-}
-
-.home2 .swipe-right {
+#slide-2 .swipe-right {
     color: var(--text-color);
 }
 
-/* home3 */
+/*-------------------------------
+             Slide 3 
+---------------------------------*/
 
-.home3 {
+#slide-3 {
     background-color: var(--main-bg-color);
+    height: 100vh;
 }

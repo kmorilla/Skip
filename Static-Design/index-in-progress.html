@@ -26,67 +26,104 @@
 
 <body>
 
+    <!-- <div class="owl-carousel home-owl owl-theme"> -->
+
     <section id="home">
-        <div class="owl-carousel home-owl owl-theme">
-            <div class="slide-1">
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-8 slide-1-text d-flex ml-5">
-                            <div class="my-auto">
-                                <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut?</h2>
-                                <h1 class="mt-5">Try <span>Skip</span>!</h1>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <p>Slide right</p>
-                            <i class="fas fa-angle-double-right"></i>
+        <div id="slide-1">
+            <div class="slide-1-background"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 h-75 d-flex">
+                        <div class="text my-auto">
+                            <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                tempor
+                                invidunt ut?</h2>
+                            <h1>Try <span>Skip</span>!</h1>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="home2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 padding-mobile home-img-before">
-                            <div class="home-img-container">
-                                <div class="home-img owl-carousel home2-owl">
-                                    <img src="./img/juan-fernandez-ZdzO5PgYObA-unsplash.jpg" alt="">
-                                    <img src="./img/mahkeo-QfBAsUzsmgk-unsplash.jpg" alt="">
-                                    <img src="./img/ph-b-1ZmfHz9Tc68-unsplash.jpg" alt="">
-                                </div>
+                    <div class="col-12 h-25">
+                        <div class="slide-footer">
+                            <div class="swipe-right">
+                                <p>Swipe right</p>
+                                <i class="fas fa-angle-double-right"></i>
+                            </div>
+                            <div class="skip-button-container">
+                                <div class="skip-button"></div>
                             </div>
                         </div>
-
-                        <div class="col-12 about-container">
-                            <div class="about">
-                                <h3>What is <span>Skip</spa>?</h3>
-                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                                    et
-                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 padding-mobile">
-                            <div class="h-100">
-                                <div class="skip-logo fixed-bottom"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="home3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-11"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="skip-button"></div>
+        <div id="slide-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 h-75 padding-mobile">
+                        <div class="home-img-container">
+                            <div class="home-img"><img src="./img/juan-fernandez-ZdzO5PgYObA-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="about">
+                            <h3>What is <span>Skip</spa>?</h3>
+                            <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 h-25">
+                        <div class="slide-footer">
+                            <div class="swipe-right">
+                                <p>Swipe right</p>
+                                <i class="fas fa-angle-double-right"></i>
+                            </div>
+                            <div class="skip-button-container">
+                                <div class="skip-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slide-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 h-75">
+                        <div class="gas-text">
+                            <h3>Our current gas prices</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        </div>
+                        <div class="gas">
+                            <div class="gas-type">
+                                <p></p>
+                                <div>
+                                    <h5></h5>
+                                </div>
+                            </div>
+                            <div class="gas-type">
+                                <p></p>
+                                <div>
+                                    <h5></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 h-25">
+                        <div class="slide-footer">
+                            <div class="swipe-right">
+                                <p>Swipe right</p>
+                                <i class="fas fa-angle-double-right"></i>
+                            </div>
+                            <div class="skip-button-container">
+                                <div class="skip-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -100,12 +137,8 @@
     <script src="./js/bootstrap.min.js"></script>
 
     <!-- Owl Carousel -->
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/owl.js"></script>
-
-
-
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owl.js"></script> -->
 
 </body>
 
