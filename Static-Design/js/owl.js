@@ -1,7 +1,8 @@
-$('.home-owl').owlCarousel({
+$('.slides-owl').owlCarousel({
     loop: false,
     margin: 0,
-    nav: true,
+    nav: false,
+    dots: true,
     responsive: {
         0: {
             items: 1
@@ -9,10 +10,10 @@ $('.home-owl').owlCarousel({
     }
 })
 
-$('.home2-owl').owlCarousel({
+$('.slide-2-owl').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     dots: false,
     center: true,
     autoplay: true,
