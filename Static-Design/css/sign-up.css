@@ -187,7 +187,7 @@ select {
     z-index: -10;
 }
 
-.button button {
+.button a {
     width: 75%;
     padding: .6rem 0;
     margin-left: auto;
