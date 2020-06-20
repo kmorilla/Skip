@@ -33,7 +33,7 @@
     height: calc(100% - 1rem);
     position: absolute;
     top: 1rem;
-    right: 0;
+    right: 1rem;
     display: flex;
 }
 
@@ -49,6 +49,7 @@
     z-index: 100;
     margin-top: auto;
     margin-bottom: auto;
+    box-shadow: 3px 3px 10px var(--text-color);
 }
 
 /*-------------------------------
@@ -134,4 +135,67 @@
 #slide-3 {
     background-color: var(--main-bg-color);
     height: 100vh;
+    color: #fff;
+}
+
+.gas-container {
+    align-self: flex-end;
+}
+
+.gas-text {
+    padding: 0 2rem
+}
+
+.gas-text h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.gas {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.gas-type {
+    margin: auto;
+    text-align: center;
+}
+
+.gas-type p {
+    font-weight: 600;
+}
+
+.gas-type div {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.gas-type h5 {
+    margin-bottom: 0;
+}
+
+.click-me {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+    align-self: flex-end;
+}
+
+.click-me p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.click-me div {
+    text-align: right;
+}
+
+.down-arrow {
+    margin-left: auto;
+    margin-right: 6.5vh;
+}
+
+.down-arrow i {
+    font-size: 2rem;
 }
