@@ -1,4 +1,6 @@
-
+html {
+    font-size: min(2.2vh, 16px);
+}
 
 .container, .row {
     height: 100%;
