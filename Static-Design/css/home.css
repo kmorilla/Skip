@@ -80,24 +80,13 @@ h5 {
 ---------------------------------*/
 
 #appointments {
-    background-color: #fff;
     padding-top: 2rem;
     padding-bottom: 3rem;
     margin-bottom: 6rem;
     position: relative;
 }
 
-#appointments::after {
-    content:'';
-    position: absolute;
-    height: 3rem;
-    width: 100%;
-    bottom: -3rem;
-    left: 0;
-    background-color: #fff;
-}
-
-.appointment-container {
+.appointment {
     background-color: var(--main-bg-color);
     color: #fff;
     margin: 1.5rem 0;
@@ -105,17 +94,37 @@ h5 {
     display: flex;
 }
 
-.appointment {
-    margin: auto;
-    display: flex;
+#appointments h6 {
+    text-align: center;
+    display: none;
 }
+
 
 .event-icon {
     display: flex;
+    position: relative;
 }
 
 .event-icon span {
     font-size: 2rem;
-    margin: auto .5rem auto 0;
+    margin: auto .5rem auto .5rem;
     color: #fff;
 }
+
+.popup-text {
+    position: absolute;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: .2rem .5rem;
+    width: max-content;
+    left: 1rem;
+    border-radius: .5rem;
+    display: none;
+    font-size: .9rem;
+}
+
+.appointment-date {
+    margin: auto;
+}
+
+
