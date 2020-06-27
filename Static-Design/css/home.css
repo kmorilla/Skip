@@ -65,13 +65,17 @@ h5 {
     margin-left: auto;
     height: 100%;
     padding: 0 .5rem;
-    background: linear-gradient( transparent 60%, var(--accent-color) 40%);
+    /* background: linear-gradient( transparent 60%, var(--accent-color) 40%); */
 }
 
 .gas-icon span {
     font-size: 4.5rem;
     margin: auto;
     color: #fff;
+}
+
+#fill-ups span {
+    font-weight: 600;
 }
 
 
@@ -94,9 +98,15 @@ h5 {
     display: flex;
 }
 
-#appointments h6 {
+.schedule-today {
     text-align: center;
     display: none;
+    font-size: 1.3rem;
+}
+
+.schedule-today h6 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 
